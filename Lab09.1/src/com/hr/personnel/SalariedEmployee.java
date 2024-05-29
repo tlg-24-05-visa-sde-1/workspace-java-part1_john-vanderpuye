@@ -31,6 +31,7 @@ public class SalariedEmployee extends Employee {
         System.out.println(getName() + " paid taxes of " + (getSalary()*SALARIED_TAX_RATE));
     }
 
+
     // accessor methods
 
     public double getSalary() {
