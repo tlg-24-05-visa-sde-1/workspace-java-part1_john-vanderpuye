@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import gov.irs.TaxPayer;
 
 public class SalariedEmployee extends Employee {
+    public static final double STANDARD_DEDUCTION = 10000.0;
     private double salary;
     public SalariedEmployee() {
     }
@@ -29,6 +30,11 @@ public class SalariedEmployee extends Employee {
     @Override
     public void payTaxes() {
         System.out.println(getName() + " paid taxes of " + (getSalary()*SALARIED_TAX_RATE));
+    }
+
+    @Override
+    public double getStandardDeduction(){
+        return STANDARD_DEDUCTION;
     }
 
 
